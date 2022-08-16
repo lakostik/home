@@ -1,0 +1,16 @@
+<div class="custom_spinner" *ngIf="status">
+  <div class="custom_spinner_container">
+    <div class="spinner_load" *ngIf="status == 1" >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="spinner_succ" *ngIf="status == 2">
+      <p>Success</p>
+    </div>
+    <div class="spinner_error" *ngIf="status == 3">
+      <p>Error</p>
+    </div>
+  </div>
+</div>

@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LegacyLayoutComponent } from './legacy-layout/legacy-layout.component';
+import { CommonModule } from "@angular/common";
+import {CommonsModule} from "./commons/commons.module";
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import { LegacyLayoutComponent } from './legacy-layout/legacy-layout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    CommonsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
